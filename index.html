@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BATECH 189 Project 3 - Joseph Sim</title>
+        <meta
+            name="description"
+            content="Discover the vibrant city of Seattle, WA. Explore its rich history, beautiful landscapes, and popular attractions."
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            body {
+                font-family: "Arial", sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: #f5f5f5;
+                color: #333;
+            }
+
+            header,
+            footer {
+                background-color: #2c3e50;
+                color: #ecf0f1;
+                text-align: center;
+                padding: 1em 0;
+            }
+
+            header {
+                background-image: url("images/seattle_skyline.jpg");
+                background-size: cover;
+                background-position: center;
+                color: #fff;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+            }
+
+            main {
+                padding: 2em;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            section {
+                margin-bottom: 2em;
+                background-color: #fff;
+                padding: 1.5em;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            h2 {
+                color: #2980b9;
+                margin-top: 0;
+            }
+
+            h3 {
+                color: #3498db;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                margin: 1em 0;
+                border-radius: 8px;
+                object-fit: cover;
+            }
+
+            ul {
+                list-style-type: disc;
+                margin: 1em 0;
+                padding: 0 1em;
+            }
+
+            a {
+                color: #3498db;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            footer ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            footer ul li {
+                margin: 0.5em 0;
+            }
+
+            footer a {
+                color: #ecf0f1;
+            }
+
+            .flex-container {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+
+            .flex-container .image-container {
+                flex: 4;
+            }
+
+            .flex-container .text-container {
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .flex-container img {
+                width: 100%;
+                height: 400px;
+                max-width: none;
+            }
+
+            @media (max-width: 768px) {
+                .flex-container {
+                    flex-direction: column;
+                }
+
+                .flex-container img {
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Seattle, Washington</h1>
+        </header>
+
+        <main>
+            <section>
+                <h2>About Seattle</h2>
+                <p>
+                    Seattle, the largest city in Washington State, is renowned
+                    for its stunning natural beauty, vibrant culture, and
+                    thriving tech scene. Nestled between the Puget Sound and
+                    Lake Washington, with the iconic Mount Rainier in the
+                    background, Seattle offers visitors a unique blend of urban
+                    sophistication and natural wonder. It's a favorite
+                    destination for those who love coffee, music, and innovative
+                    technology.
+                </p>
+            </section>
+
+            <section>
+                <h2>Popular Attractions</h2>
+                <article class="flex-container">
+                    <div class="image-container">
+                        <img src="spaceNeedle.png" alt="Space Needle" />
+                    </div>
+                    <div class="text-container">
+                        <h3>Space Needle</h3>
+                        <p>
+                            The Space Needle is Seattle's most iconic landmark,
+                            offering breathtaking views of the city and its
+                            surrounding mountains and waterways. Originally
+                            built for the 1962 World's Fair, it features an
+                            observation deck and a rotating restaurant.
+                        </p>
+                    </div>
+                </article>
+                <article class="flex-container">
+                    <div class="image-container">
+                        <img
+                            src="PikePlaceMarket.png"
+                            alt="Pike Place Market"
+                        />
+                    </div>
+                    <div class="text-container">
+                        <h3>Pike Place Market</h3>
+                        <p>
+                            Pike Place Market is one of the oldest continuously
+                            operated public farmers' markets in the United
+                            States. It's a bustling hub of vendors selling fresh
+                            produce, seafood, and crafts, as well as the famous
+                            Pike Place Fish Market where fish are theatrically
+                            tossed.
+                        </p>
+                    </div>
+                </article>
+                <article class="flex-container">
+                    <div class="image-container">
+                        <img
+                            src="chihuly_garden.png"
+                            alt="Chihuly Garden and Glass"
+                        />
+                    </div>
+                    <div class="text-container">
+                        <h3>Chihuly Garden and Glass</h3>
+                        <p>
+                            Chihuly Garden and Glass showcases the stunning
+                            glass art of Dale Chihuly. The exhibition includes
+                            intricate glass sculptures in the indoor gallery,
+                            the stunning Glasshouse, and the beautifully
+                            landscaped garden.
+                        </p>
+                    </div>
+                </article>
+                <article class="flex-container">
+                    <div class="image-container">
+                        <img
+                            src="seattle_art_museum.png"
+                            alt="Seattle Art Museum"
+                        />
+                    </div>
+                    <div class="text-container">
+                        <h3>Seattle Art Museum</h3>
+                        <p>
+                            The Seattle Art Museum (SAM) features an impressive
+                            collection of art from around the world. From
+                            contemporary works to ancient artifacts, SAM offers
+                            a diverse range of exhibits and is a cultural
+                            cornerstone of the city.
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <section>
+                <h2>Interesting Information</h2>
+                <ul>
+                    <li>Population: Approximately 753,675 (as of 2020)</li>
+                    <li>
+                        Geography: Located between the Puget Sound and Lake
+                        Washington, with views of the Cascade and Olympic
+                        mountain ranges.
+                    </li>
+                    <li>
+                        Weather: Known for its temperate maritime climate with
+                        mild, wet winters and dry summers.
+                    </li>
+                    <li>
+                        Language: Predominantly English, with a diverse
+                        linguistic community.
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>Image Sources:</p>
+            <ul>
+                <li>
+                    <a
+                        href="https://unsplash.com/photos/space-needle-seattle-washington-tSqj4gt0xo8"
+                    >
+                        Space Needle:
+                    </a>
+                    Photo by Dylan Mullins. Free to use under the Unsplash
+                    License.
+                </li>
+                <li>
+                    <a
+                        href="https://unsplash.com/photos/landscape-photography-of-road-UytSb_a2YE0"
+                    >
+                        Pike Place Market:
+                    </a>
+                    Photo by Hafidh Satyanto. Free to use under the Unsplash
+                    License.
+                </li>
+                <li>
+                    <a
+                        href="https://unsplash.com/photos/a-group-of-colorful-lights-HTAXwksLvaw"
+                    >
+                        Chihuly Garden and Glass:
+                    </a>
+                    Photo by Steve O. Free to use under the Unsplash License.
+                </li>
+                <li>
+                    <a
+                        href="https://unsplash.com/photos/a-group-of-colorful-lights-HTAXwksLvaw"
+                    >
+                        Seattle Art Museum:
+                    </a>
+                    Photo by Brett Wharton. Free to use under the Unsplash
+                    License.
+                </li>
+            </ul>
+            <p>2024 by Joseph Sim for BATECH 189</p>
+        </footer>
+    </body>
+</html>
